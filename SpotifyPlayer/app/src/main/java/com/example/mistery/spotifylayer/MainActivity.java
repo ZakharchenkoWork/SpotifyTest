@@ -31,8 +31,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //adding a song from Spotify
 
+        //adding a song from Spotify
         songsList.add("spotify:track:2TpxZ7JUBn3uw46aR7qd6V");
 
         authHandler = AuthHandler.initialize(this);

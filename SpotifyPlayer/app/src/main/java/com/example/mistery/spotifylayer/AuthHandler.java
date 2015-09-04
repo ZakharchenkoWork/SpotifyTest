@@ -23,6 +23,8 @@ public class AuthHandler {
                 AuthData.getRedirectUri());
         builder.setScopes(new String[]{"user-read-private", "streaming"}); // setting for... streaming
         AuthenticationRequest request = builder.build(); // request for....
+
+
         //we will open the Login activity only on our MainActivity so...
         AuthenticationClient.openLoginActivity(mainActivity, AuthData.getRequestCode(), request); // ...opening login activity
     }
